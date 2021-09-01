@@ -1,0 +1,4 @@
+print=printf=<stdio.h>
+local=$(DETERMINE_TYPE)$
+function=void
+end=}

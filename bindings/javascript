@@ -1,0 +1,9 @@
+console.log=printf("\033[0m");printf=<stdio.h>
+console.error=printf("\033[0;31m");printf=<stdio.h>
+console.warn=printf("\033[0;33m");printf=<stdio.h>
+console.clear()=printf("\033[0m");printf("\e[1;1H\e[2J")=<stdio.h>
+let=$(DETERMINE_TYPE)$
+var=$(DETERMINE_TYPE)$
+const=$(DETERMINE_TYPE)$
+function=void
+main();=

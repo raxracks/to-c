@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "deno compile --allow-read --allow-write to-c.ts && ./to-c testing.js javascript && gcc testing.c && echo 'Precompiled Output:' && deno run testing.js && echo 'Compiled Output' && ./a.out",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
